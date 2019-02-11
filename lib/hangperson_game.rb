@@ -49,7 +49,7 @@ class HangpersonGame
   end
 
   def check_win_or_lose
-    if @guesses.length + @wrong_guesses.length > 6
+    if @wrong_guesses.length > 6
       return :lose
     end
     @word.chars do |letter|
